@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-logo" href="">Coding With Enjoy</a>
+    </nav>
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <nav class="menu">
+      <a href="#" style="animation-delay: 0.1s">Home</a>
+      <a href="#" style="animation-delay: 0.2s">About</a>
+      <a href="#" style="animation-delay: 0.3s">Services</a>
+      <a href="#" style="animation-delay: 0.4s">Products</a>
+      <a href="#" style="animation-delay: 0.5s">Contact</a>
+    </nav>
+
+    <script type="text/javascript">
+      const toggleMenu = () => {
+        document.body.classList.toggle("open");
+      };
+    </script>
+  </body>
+</html>
